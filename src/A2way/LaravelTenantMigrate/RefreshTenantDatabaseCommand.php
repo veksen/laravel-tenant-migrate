@@ -41,7 +41,7 @@ class RefreshTenantDatabaseCommand extends Command {
 	{
 		$connectionName = $this->argument('connection-name');
 		$databaseName = $this->argument('database-name');
-		
+
 		\Config::set('database.connections.'.$connectionName.'.database', $databaseName);
 		$connection = \DB::reconnect($connectionName);
 		\DB::setDefaultConnection($connectionName);
