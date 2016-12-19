@@ -1,11 +1,15 @@
 {
     "name": "a2way/laravel-tenant-migrate",
-    "description": "A2Way Laravel Tenant Migrate",
-    "keywords": ["a2way", "laravel"],
+    "description": "Fork of A2Way Laravel Tenant Migrate",
+    "keywords": ["a2way", "veksen", "laravel"],
     "authors": [
         {
             "name": "Supun Budhajeewa",
             "email": "budhajeewa@gmail.com"
+        },
+        {
+            "name": "Jean-Philippe Sirois",
+            "email": "jp@veksen.net"
         }
     ],
     "require": {
