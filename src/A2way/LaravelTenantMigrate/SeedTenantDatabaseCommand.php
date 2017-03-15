@@ -48,7 +48,9 @@ class SeedTenantDatabaseCommand extends Command {
 
 		$this->info('Seeding tenant database "'.$databaseName.'"...');
 
-		$this->call('db:seed');
+		$this->call('db:seed', [
+			'--class' => $this->option('class')
+		]);
 	}
 
 	/**
@@ -72,7 +74,7 @@ class SeedTenantDatabaseCommand extends Command {
 	protected function getOptions()
 	{
 		return array(
-			array('example', null, InputOption::VALUE_OPTIONAL, 'An example option.', null),
+			array('class', null, InputOption::VALUE_OPTIONAL, 'The class name of the root seeder', 'DatabaseSeeder'),
 		);
 	}
 
